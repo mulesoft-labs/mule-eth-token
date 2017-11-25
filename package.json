@@ -1,0 +1,13 @@
+{
+  "name": "wire",
+  "version": "1.0.0",
+  "description": "Smart Contracts of the WIRE token and crowdsale.",
+  "directories": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "zeppelin-solidity": "1.4.0"
+  }
+}
