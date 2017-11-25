@@ -1,18 +1,19 @@
 pragma solidity ^0.4.18;
-import "zeppelin-solidity/contracts/token/StandardToken.sol";
 
-contract WireToken is StandardToken {
+import "zeppelin-solidity/contracts/token/BurnableToken.sol";
+import "zeppelin-solidity/contracts/token/PausableToken.sol";
+import "zeppelin-solidity/contracts/token/MintableToken.sol";
 
-  string public name = "WireToken";
+contract WireToken is BurnableToken, PausableToken, MintableToken {
 
-  string public symbol = "WIRE";
+  string public constant name = "WireToken";
 
-  uint public decimals = 18;
+  string public constant symbol = "WIRE";
 
-  uint public INITIAL_SUPPLY = 10000 * (10 ** decimals);
+  uint8 public constant decimals = 18;
 
-  function WireToken() {
-    totalSupply = INITIAL_SUPPLY;
-    balances[msg.sender] = INITIAL_SUPPLY;
+  // Override burn function to avoid burning when token is paused.
+  function burn(uint256 _value) whenNotPaused public {
+    super.burn(_value);
   }
 }
