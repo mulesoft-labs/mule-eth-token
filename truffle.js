@@ -1,3 +1,5 @@
+require("babel-polyfill");
+require("babel-register");
 var HDWalletProvider = require("truffle-hdwallet-provider");
 
 var infura_apikey = "some ropsten Infura API key";
