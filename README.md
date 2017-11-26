@@ -1,4 +1,4 @@
-WIRE Smart Contracts(https://travis-ci.org/farolfo/wire.png)](https://travis-ci.org/farolfo/wire)
+WIRE Smart Contracts
 ====================
 
 WIRE token and corwdsale Smart Contracts.
