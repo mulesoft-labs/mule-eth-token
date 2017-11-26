@@ -32,6 +32,11 @@ contract WireCrowdsale is CappedCrowdsale, FinalizableCrowdsale {
     WireToken(token).pause();
   }
 
+  // Create new tokens.
+  function mintTokens(address _to, uint256 _amount) onlyOwner public {
+    WireToken(token).mint(_to, _amount);
+  }
+
   // Manually end the crowdsale.
   function end() onlyOwner public {
     hasBeenEndedByOwner = true;
