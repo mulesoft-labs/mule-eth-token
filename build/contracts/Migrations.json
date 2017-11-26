@@ -819,7 +819,7 @@
     "3": {
       "events": {},
       "links": {},
-      "address": "0x44f93af242466cffa98dc4edb7ae17517c44aa60"
+      "address": "0x6ab9814c2e5e90719018f33039afe2a8b95dad9f"
     },
     "1511727150315": {
       "events": {},
@@ -865,8 +865,13 @@
       "events": {},
       "links": {},
       "address": "0xafc182280a6420549558421e4356bce1b801a4dc"
+    },
+    "1511735761207": {
+      "events": {},
+      "links": {},
+      "address": "0xef4f6abf3a2116167082acc3aedaa0b5edbbe15f"
     }
   },
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-11-26T21:33:13.684Z"
+  "updatedAt": "2017-11-26T22:40:14.184Z"
 }
