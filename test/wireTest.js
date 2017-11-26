@@ -17,8 +17,8 @@ contract('WireCrowdsale', function(accounts) {
   const wallet = accounts[0] // Wallet to be used in the crowdsale.
 
   beforeEach(async function() {
-    wireToken = await WireToken.new({gas: 155000});
-    wireCrowdsale = await WireCrowdsale.new(startTime, endTime, rate, cap, wallet, {from: wallet, gas: 155000});
+    wireToken = await WireToken.new();
+    wireCrowdsale = await WireCrowdsale.new(startTime, endTime, rate, cap, wallet, {from: wallet});
   });
 
   it('should let owner to stop the crowdsale', async function() {
