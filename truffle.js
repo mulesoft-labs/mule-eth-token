@@ -16,12 +16,12 @@ module.exports = {
       provider: new HDWalletProvider(mnemonic, "https://ropsten.infura.io/"+infura_apikey),
       network_id: 3,
       gas: 4512288
-    },
-    solc: {
-      optimizer: {
-        enabled: true,
-        runs: 200
-      }
+    }
+  },
+  solc: {
+    optimizer: {
+      enabled: true,
+      runs: 200
     }
   }
 };
