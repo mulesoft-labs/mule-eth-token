@@ -1,7 +1,7 @@
 {
   "name": "wire",
   "version": "1.0.0",
-  "description": "Smart Contracts of the WIRE token and crowdsale.",
+  "description": "Smart Contracts of the MULE token and crowdsale.",
   "scripts": {
     "compile": "node_modules/.bin/truffle compile",
     "test": "script/test.sh"
