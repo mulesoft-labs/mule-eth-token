@@ -1,9 +1,7 @@
-WIRE Smart Contracts
+MULE Smart Contracts
 ====================
 
-WIRE token and corwdsale Smart Contracts.
-
-![wire](/assets/wire.jpg)
+MULE token and corwdsale Smart Contracts.
 
 You MUST use this project with Node v6.11.0. We highly recommend `nvm` as NodeJS package manager.
 
